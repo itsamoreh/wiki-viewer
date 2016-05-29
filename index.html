@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -7,8 +7,6 @@
     <title>Wiki Viewer</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-		<!-- JQUERY -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 		<!-- STYLESHEET -->
 		<link rel="stylesheet" href="css/stylesheet.css">
 		<!-- FONT AWESOME -->
@@ -18,13 +16,12 @@
     <div class="row searchBox">
 			<div class="large-6 large-push-3 columns">
 				<h1 class="text-center">Wiki Viewer</h1>
-				<form action="">
+				<form onsubmit="search()">
 					<div class="large-12 columns">
 						<div class="input-group">
-							<input class="input-group-field" type="text">
-							<span class="input-group-label searchButton" onclick="search();"><i class="fa fa-search"></i></span>
+							<input class="input-group-field searchString" type="text">
+							<span class="input-group-label searchButton" onclick="search()"><i class="fa fa-search"></i></span>
 						</div>
-					</div>
 				</form>
 				<div class="large-12 columns text-center random">
 					 <a href="https://en.wikipedia.org/wiki/Special:Random" target="_"><i class="fa fa-random"></i>  Random page</a></p>
@@ -33,18 +30,19 @@
     </div>
 
 		<div class="row resultsBox">
-			<div class="large-12 columns result">
+			<!-- <div class="large-12 columns result">
 				<div class="callout">
-					<h2 class="resultTitle"><a href="" class="link">Title</a></h2>
-					<p class="resultPreview">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					</p>
+					<h2 class="resultTitle"><a href="" class="resultLink"></a></h2>
+					<p class="resultPreview"></p>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+		<!-- WIKI VIEWER JS -->
+		<script src="js/wiki-viewer.js"></script>
   </body>
 </html>

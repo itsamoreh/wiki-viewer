@@ -23,7 +23,11 @@
   padding: 20px 40px;
 }
 
-.link {
+.callout:hover {
+  border: 1px solid black;
+}
+
+.resultLink {
   color: #0a0a0a;
   text-decoration: underline;
   text-decoration-style: dotted;
