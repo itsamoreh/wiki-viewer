@@ -1,33 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<meta name="description" content="Wiki-viewer">
-	<meta name="author" content="Amor Kumar">
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Viewer</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+		<!-- JQUERY -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<!-- STYLESHEET -->
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<!-- FONT AWESOME -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="row searchBox">
+			<div class="large-6 large-push-3 columns">
+				<h1 class="text-center">Wiki Viewer</h1>
+				<form action="">
+					<div class="large-12 columns">
+						<div class="input-group">
+							<input class="input-group-field" type="text">
+							<span class="input-group-label searchButton" onclick="search();"><i class="fa fa-search"></i></span>
+						</div>
+					</div>
+				</form>
+				<div class="large-12 columns text-center random">
+					 <a href="https://en.wikipedia.org/wiki/Special:Random" target="_"><i class="fa fa-random"></i>  Random page</a></p>
+				</div>
+			</div>
+    </div>
 
-	<title>Wiki Viewer</title>
+		<div class="row resultsBox">
+			<div class="large-12 columns result">
+				<div class="callout">
+					<h2 class="resultTitle"><a href="" class="link">Title</a></h2>
+					<p class="resultPreview">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+			</div>
+		</div>
 
-	<!-- Bootstrap core CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/stylesheet.css" rel="stylesheet">
-
-	<!-- jQuery -->
-	<script src="js/jquery-2.2.3.min.js"></script>
-
-</head>
-
-<body>
-
-	<h1>wiki-viewer</h1>
-
-	<!-- Bootstrap core JavaScript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/wiki-viewer.js"></script>
-
-</body>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>

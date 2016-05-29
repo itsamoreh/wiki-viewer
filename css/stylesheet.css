@@ -1,0 +1,41 @@
+/* SEARCH BOX */
+
+.searchBox {
+  margin-bottom: 50px;
+}
+
+.searchButton:hover {
+  cursor: pointer;
+}
+
+/* RANDOM */
+.random {
+  margin-top: -10px;
+}
+
+/* RESULTS BOX */
+
+.resultsBox {
+
+}
+
+.callout {
+  padding: 20px 40px;
+}
+
+.link {
+  color: #0a0a0a;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.result {
+
+}
+
+.resultTitle {
+
+}
+
+.resultPreview {
+}
